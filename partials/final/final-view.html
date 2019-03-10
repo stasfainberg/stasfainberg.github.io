@@ -1,0 +1,19 @@
+<div id="start" class="row animated fadeInLeft" ng-controller="FinalCtrl">
+
+    <div class="jumbotron">
+
+        <div ng-if="!equality">
+            <h1>Congratulations !</h1>
+            <p class="lead"><strong>{{ winner }}</strong> won the match !</p>
+        </div>
+        <div ng-if="equality">
+            <h1>Equality !</h1>
+        </div>
+        <p>
+            <a class="btn btn-lg btn-success" ng-click="restart()" role="button">
+                Restart with previous configuration
+            </a>
+        </p>
+    </div>
+
+</div>
