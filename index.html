@@ -1,37 +1,534 @@
 <!DOCTYPE html>
-<html ng-app="connect4App">
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <title>Connect 4</title>
-    <!-- JavaScript imports -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="services/ui-utils.js"></script>
-    <script src="app.js"></script>
-    <script src="controllers.js"></script>
-    <script src="partials/start/start-controller.js"></script>
-    <script src="partials/game/game-controller.js"></script>
-    <script src="partials/game/game-manager.js"></script>
-    <script src="partials/final/final-controller.js"></script>
-    <!-- CSS imports -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="css/main.css">
-	
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>STAS - My Web Profile</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <ul class="nav nav-pills pull-right" role="tablist">
-                <li role="presentation" class="active"><a href="#start">New Game</a></li>
-            </ul>
-            <h3>Connect 4</h3>
-        </div>
-        <div ng-view></div>
-    </div>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- Start Home Section -->
+<div id="home">
+
+<!--- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<!-- Navbar brand -->
+	<a class="navbar-brand" href="https://www.stasfainberg.com/"><img src="img/StasLogo02.png"></a>
+	 
+	 <!-- Collapse button -->
+	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<!-- Collapsible content -->
+	<div class="collaps navbar-collapse collapse" id="navbarResponsive">
+
+		<!-- Links -->
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#education">Education</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#technology">Technology</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#project">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#experience">Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#military">Military</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!--- End Navigation -->
+
+
+<!--- Start Landing Page Section -->
+<div class="landing">
+	<div class="home-wrap">
+		<div class="home-inner">
+		</div>
+	</div>
+</div>
+	
+<div class="caption text-center">
+	<h1>Stas Fainberg</h1>
+	<h3>Welcome To My Website</h3>
+	<a class="btn btn-outline-light btn-lg" href="#about">Let's Start</a>
+</div>
+<!--- End Landing Page Section -->
+</div>
+<!-- End Home Section --> 	
+
+
+
+
+<!-- Start About Section -->
+<div id="about" class="offset">
+<div class="col-12 narrow text-center">
+	<h1>A Little Bit About Myself</h1>
+	<div class=heading-underline></div>
+	<p class="myInfo">
+	Responsible, organized and dedicated team player with great communication skills. Highly motivated for development, looking for a full-time position to fulfill my programming passion. Excellent documentation skills and creativity, determined to be integrated in a big company.
+	</p>
+	<br>
+	<div class="aboutInfo">
+		<div class="row">
+			<img src="img/StasFace01.jpg" class="img-fluid">
+			<blockquote>
+				<hr class="about-hr">
+				<p class="myInfo">
+				<i class="fas fa-quote-left"></i>
+				My name is Stas Fainberg and I am a junior developer who graduated The College of Management with bachelor's degree (B.Sc) in Computer Science. I am currently work as a junior software developer at UBS Investment Bank. I am happilly married to Olga, my beautiful soul mate, she has a master degree in Global Health Management and she works at Shiba's hospital. We have a cute little dog name Jack and we love to travel and do outdoor activities. I also like to play the saxophone on my free time as a hobby.
+				</p>
+			</blockquote>
+		</div>
+	</div>
+</div>
+</div>
+<!-- End About Section --> 
+
+
+
+
+
+<!-- Start Education Section -->
+<div id="education" class="offset">
+
+<!-- Start Jambotron Section -->
+<div class="jumbotron">
+	<div class="narrow">
+		<div class="col-12 text-center">
+			<h1 class="heading">Education</h1>
+			<div class=heading-underline></div>
+			<p class="myEducationalInfo">
+				<b>2015 - 2018</b>
+				<br>
+				B.sc in Computer Science, College of Management, Israel.
+				<br>
+				<b>2008 - 2009</b>
+				<br>
+				MCITP: Microsoft Certified IT Professional Windows Server 2008, Hi-Tech College, Israel.
+				<br>
+				<b>2003 - 2005</b>
+				<br>
+				Electronic & Computers engineering, Amal-Bet College, Israel.
+				<br>
+				<b>2000 - 2003</b>
+				<br>
+				Full matriculation with Electronics & Computers learning area, Amal-Bet high school, Israel
+				<br>
+				<b>1995 - 2003</b>
+				<br>
+				Saxophone & music theory studies, Petah-Tikva municipal conservatory, Israel.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- End Jambotron Section -->
+
+</div>
+<!-- End Education Section --> 
+
+
+
+
+
+
+<!-- Start Technology Section -->
+<div id="technology" class="offset">
+<div class="col-12 narrow text-center">
+		
+		<h1>Technology Summary</h1>
+		<div class=heading-underline></div>
+		<div class="row text-center">
+
+			<div class="col-md-6">
+				<div class="feature">
+					<i class="fas fa-file-code fa-4x" data-fa-transform="shrink-3 up-5"></i>
+					<h3>Software</h3>
+					<p>Java | C++ | C# | HTML | CSS | JavaScript| jQuery | Json | Ajax | 
+						BootStrap3 | BootStrap4 | React | Node.js | Python | 
+						Microsoft SQL | MySQL | MongoDB | IndexedDB | Entity Framework | 
+						ASP.NET CORE | LINQ | Apache | Maven | Spring | Spring MVC | Spring Boot | Microservices | XML | Github | Bitbucket | 
+						WebService | TCP/IP | UDP | Eclipse | Visual Studio | 
+						Visual Studio Code | ECMAScript5 | ECMAScript6 | Assembly | Agile | Scrum | MIPS Architecture</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="feature">
+					<i class="fas fa-chalkboard-teacher fa-4x" data-fa-transform="shrink-4 up-5"></i>
+					<h3>System Administrator</h3>
+					<p>MCITP | VMware | Hyper-V | CCNA | TCP/IP | Windows Server (2003, 2008, 2012, 2016) | 
+						Active Directory | DNS | DHCP | GPO | WSUS | WDS | Print Server | File Server | SQL | 
+						Exchange (2007, 2010, 2013) | Office (2010, 2013, 2016, 365) | Backup Exec | Linux | PowerShell | Bash</p>
+				</div>
+			</div>
+
+		</div>
+	
+</div>
+</div>
+<!-- End Technology Section --> 
+
+
+
+<!-- Start Projects Section -->
+<div id="project" class="offset">
+	<div class="fixed-background">
+		<div class="row dark text-center">
+			
+			<div class="col-12">
+				<h1 class="heading">Projects</h1>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="col-md-4">
+				<h3>Java</h3>
+				<h5>Graphical 3D Maze Game</h5>		
+				<div class="feature">
+					<i class="fab fa-java fa-3x"></i>
+				</div>
+				<p class="lead projectInfo">A fun game for people who love mazes. This desktop game application allowing the user to generate a maze based on 
+					his input (floors, columns, rows) and play to solve it. In addition the user can ask for a hint if he doesn't know what should be his next 
+					move or the user can ask for a solution to solve the maze and reach out to the trophy if he can't solve the maze by himself. The maze is generated 
+					using the following algorithms: DFS, BFS or Best First Search. The solution is also generated using the same algorithms. 
+					</br>
+					</br>
+					Using: Eclipse, multi-threading, swing, IO streams, networking, design pattern, MVP, github
+				</p>
+			</div>
+
+
+			<div class="col-md-4">
+				<h3>Mobile (Android JAVA)</h3>				
+				<h5>Online Music Playlists Sharing Application</h5>
+				<div class="feature">
+					<i class="fas fa-mobile-alt fa-3x"></i>
+				</div>
+				<p class="lead projectInfo">A fun online music playlists sharing application for people who love music. 
+					The application allowing users signing in to create, listen and share their own music playlists or listen to other shared 
+					playlists which was shared by other users. The songs on a playlist can be played and listend using the YouTube application. 
+					The shared playlists are apearing on the main page of the application and in addition a user can rate these shared playlists that was created by others.  
+					</br>
+					</br>
+					Using: Android Studio, Firebase, Cloudinary and YouTube API. Social network was implemented
+				</p>
+			</div>
+
+
+			<div class="col-md-4">
+				<h3>.Net/C#</h3>				
+				<h5>Web Application</h5>
+				<div class="feature">
+					<i class="fas fa-code fa-3x"></i>
+				</div>
+				<p class="lead projectInfo">A real web application which was built for Beit Ekstein company. 
+					This web application allowing users to manage apartments, malfunctions in each apartment and the technicians who are fixing those malfunctions. 
+					Instructors of Bet-Ekstein can create new apartments based on the company's purchase, the residents of an apartment can raise tickets describing 
+					the malfunction they experiencing in their apartment and the technicians who are fixin these malfunctions can close those tickets after solving them.
+					</br>
+					</br>
+					Using: APS.NET Core, MVC, EF, LINQ, JQuery, Ajax, Javascript, HTML5, CSS, Facebook API, WebService, github, Microsoft SQL
+				</p>
+			</div>
+		</div>
+		<!-- End Row Dark -->
+
+
+		<div class="row dark text-center">
+
+			<div class="col-md-4">
+				<h3>C/C++</h3>				
+				<h5>Network Tic Tac Toe Game</h5>
+				<div class="feature">
+					<i class="fas fa-code fa-3x"></i>
+				</div>
+				<p class="lead projectInfo">A fun Tic Tac Toe game between online users which are connected to the same local network. In order to play the 
+					game, users needs be connected to the main server (UDP socket).	After connecting to the server each user can see a list of all online 
+					users and he can choose agains which user he would like to play. A TCP\IP socket is created for every game between two users. Both users 
+					have the same game status view and each user on his turn can fill the table with the sign was designated to him while the game was created.
+					</br>
+					</br>
+					Using: TCP and UDP sockets, Multi-Threading. Network interaction, Server & Client
+				</p>
+			</div>
+
+			<div class="col-md-4">
+				<h3>C/C++</h3>				
+				<h5>Vacuum Cleaner Robot</h5>
+				<div class="feature">
+					<i class="fas fa-code fa-3x"></i>
+				</div>
+				<p class="lead projectInfo">Vacuum cleaner robot with learning algorithm which causes the robot (914 Pc-Bot with sensors) to move 
+					in space and cover new areas. This robot can move in space by its own and mark the places he visited. The robot has two 
+					functions: the first function is to draw a map while it is moving in space, based on the data receiving by it's sensors and the 
+					second function is to mark places he visited based on a given map that was loaded to his memory.
+					</br>
+					</br>
+					Using: Eclipse, STC algorithm, PCBot.
+				</p>
+			</div>
+
+			<div class="col-md-4">
+					<h3>HTML/CSS</h3>				
+					<h5>My Web Profile</h5>
+					<div class="feature">
+						<i class="fas fa-code fa-3x"></i>
+					</div>
+					<p class="lead projectInfo">My Web Profile is basically this website you're visiting. I've decided to show my basic web development skills so I 
+						designed and built this web page which contains the data from my resume.
+						</br>
+						</br>
+						Using: SublimeText, HTML, CSS, Bootstrap4
+					</p>
+				</div>
+
+		</div>
+
+		<div class="row dark text-center">
+
+				<div class="col-md-4">
+					
+				</div>
+	
+				<div class="col-md-4">
+					<h3>HTML/CSS/JavaScript</h3>				
+					<h5>Shearim - Money Collection Tracking System</h5>
+					<div class="feature">
+						<i class="fas fa-code fa-3x"></i>
+					</div>
+					<p class="lead projectInfo">A real web application for Shearim company
+						 (<a href="https://www.shearim.co.il/" target="_blank">שערים</a>). This Money Collection Tracking System is made 
+						 for tracking clients and the money they need to pay to Shearim company. User adds clients with data about the 
+						 payments they have to make. User can track which client made the payment, how much money was paied in general 
+						 and how much money was left to be paied. The date presented about each clinet is the amount of money he needs to 
+						 pay, invoice number, the payment method, who made the payment and the payment date.
+						</br>
+						</br>
+						Using: Visual Studio Code, HTML, CSS, JavaScript, Jquery, BootStrap4, IndexedDB
+					</p>
+				</div>
+	
+				<div class="col-md-4">
+						
+					</div>
+	
+			</div>
+		<!-- End Row Dark -->
+
+			<div class="fixed-wrap">
+				<div class="fixed">
+				</div>
+			</div>
+
+	</div>
+<!-- End Fixed Background -->
+
+</div>
+<!-- End Projects Section -->
+
+
+
+
+
+
+
+<!-- Start Experience Section -->
+
+<div id="experience" class="offset">
+
+<!-- Start Jambotron Section -->
+<div class="jumbotron">
+	<div class="narrow">
+		<div class="col-12 text-center">
+			<h1 class="heading">Experience</h1>
+			<div class=heading-underline></div>
+				<p class="myExperienceInfo">
+					<h3>2018 - Present</h3>
+					<h5>Software Developer - UBS Investment Bank & Wealth Management, Herzliya, Israel.</h5>
+					<h6>Herzliya, Israel</h6>
+					<br>
+					FullStack software developer, developing in house desktop and web application for business back office, wealth management department. The application allowing users to create reports based on the Tel-Aviv Stock Exchange (TASE) and the Switzerland requirements.
+					<br>Using: HTML5, CSS, JavaScript, jQuery, Bootstrap, Node.js(express, ejs, request), RESTful, API's, MongoDB.
+				</p>
+				<br>
+				<br>
+
+				<p class="myExperienceInfo">
+					<h3>2016 - 2018</h3>
+					<h5>IT Manager/DevOps - UBS Investment Bank & Wealth Management</h5>
+					<h6>Herzliya, Israel</h6>
+					<br>
+					Team manager, managing 3 team members and monitoring the ongoing work.
+					<br>
+					Acting as primary point of contact for all issues regarding core applications and infrastructure.
+					<br>
+					Running change process including test strategy, information security strategy, test plan, UAT and PROD rollout.
+					<br>
+					Analysis technical requirements, information security and business needs for system development / implementation / acquisition.
+					<br>
+					Conducting, managing and executing IT projects cooperated with overseas teams and global entities.
+					<br>
+					Servers maintenance (2003, 2008, 2012), AD, DNS, DHCP, Exchange (2007, 2010, 2013, 2016).
+					<br>
+					Code modification within an in-place financial program, production and test environment: Java, HTML, CSS, Javascript, jQuery, Node.js.
+					<br>
+					Scripting: Shaldag (Sivron) investment system: PowerShell, JavaScript, Python. 
+				</p>
+				<br>
+				<br>
+
+				<p class="myExperienceInfo">
+					<h3>2011 - 2016</h3>
+					<h5>System Administrator - UBS Investment Bank & Wealth Management</h5>
+					<h6>Herzliya, Israel</h6>
+					<br>
+					Windows server maintenance (2003, 2008, 2012). 
+					<br>
+					End users support: XP, Win7, Win8 and Win10.
+					<br>
+					AD, DNS, DHCP, Print server, File server, WSUS, Hyper-V, MDT, Exchange (2007, 2010).
+					<br>
+					Trading systems support: Shaldag (Sivron), FMR, Leumi Finance and Menta. Portfolio management systems: Danel
+					<br>
+					Market data systems: Super Bizportal, TradeOne, Bloomberg and Terminal Bizportal.
+					<br>
+					Daily work with foreign vendors and supporting teams from Frankfurt, London and Dubai.
+				</p>
+				<br>
+				<br>
+
+				<p class="myExperienceInfo">
+					<h3>2009 - 2011</h3>
+					<h5>System Administrator - Israeli Court System</h5>
+					<h6>Tel-Aviv, Israel</h6>
+					<br>
+					Windows Server 2003, 2008, 2012. 
+					<br>
+					End users support: XP, Win7, Win8 and Win10.
+					<br>
+					AD, DNS, DHCP, Print server, File server, WSUS, Hyper-V, Exchange (2007, 2010).
+					<br>
+					Backup Exec, NetApp, Net-HaMishpat.
+					<br>
+					VPN users support remotely and in customer's home.
+				</p>
+				<br>
+				<br>
+
+				<p class="myExperienceInfo">
+					<h3>2008 - 2009</h3>
+					<h5>Helpdesk - Wizo Gan-Vanof Youth Village</h5>
+					<h6>Petah-Tikva, Israel</h6>
+					<br>
+					End users support: XP, Vista.
+					<br>
+					Peripheral support: printers, scanners, faxes, phones, headphones, cables, etc...
+					<br>
+					Daily work with vendors and local systems support teams.
+				</p>
+				<br>
+				<br>
+
+		</div>
+	</div>
+</div>
+<!-- End Jambotron Section -->
+</div>
+<!-- End Experience Section --> 
+
+
+
+
+
+
+
+
+<!-- Start Military Section -->
+<div id="military" class="offset">
+	<div class="col-12 text-center">
+		<h1 class="heading">Military</h1>
+		<div class=heading-underline></div>
+		<p class="myMilitaryInfo">
+			<h3>IDF (Israeli Defense Force)</h3>
+			<h5>IAF (Israeli Air Force) – (2005 – 2008)</h5>
+			<br>
+			Testing Manager - In charge of 10 soldiers. Testing, fixing and validating communication devices used on air-planes and on ground.
+			<br>
+			Operating and maintaining CCTV (Closed Circuit Television) systems and VMD (Video Motion Detector) systems.
+			<br>
+			UHF & VHF equipment technician – Fixing ground communication instruments.
+		</p>
+		<br>
+		<br>
+	</div>
+</div>
+
+<!-- End Military Section -->
+
+
+
+
+
+
+<!-- Start Contact Section -->
+<div id="contact" class="offset">
+	<div class="col-12 text-center">
+	</div>
+</div>
+
+
+<footer>
+	<div class="row justify-content-center">
+		<div class="col-md-5 text-center">
+
+			<img src="img/StasLogo02.png">
+			<p>My core task is to develop and design a solutions 
+			that represent everything your business needs to compete in the
+			modern marketplace.</p>
+			<strong>Contact Info</strong>
+			<p>Stas (Ailon) Fainberg<br>(+972)-50-9777754<br>stas.fainberg@gmail.com<br>Ramat-Gan, Israel</p>
+			<a href="https://github.com/stasfainberg" target="_blank"><i class="fab fa-git-square"></i></a>
+			<a href="https://www.linkedin.com/in/stasfainberg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		</div>
+
+		<hr class="socket">
+		&copy; Stas Fainberg
+	</div>
+</footer>
+
+</div>
+<!-- End Contact Section -->
+
+
+
+
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+
 </body>
 </html>
+
+
